@@ -1,3 +1,6 @@
+import java.io.*;
+import java.util.*;
+
 public class Sudoku{
     public static void main(String[] args) {
 
@@ -8,8 +11,10 @@ public class Sudoku{
                 board[x][y] = 6;
             }
         }
+       
 
         drawBoard(board);
+        loadGame();
         }
         public static void drawBoard(int[][] board){
             int[][] num = board;
@@ -21,4 +26,29 @@ public class Sudoku{
             }
             System.out.println("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
         }
+
+        public static File loadGame(int gameNum) {
+            int matchGame = 0;
+            String game = "";
+            File folder = new File("Games/sudokus");
+            File[] files = folder.listFiles();
+            for (File file : files)
+            {
+                matchGame++;
+                if(gameNum == matchGame)
+                game = file.getName();
+            }
+            return  new File("Games\\sudokus\\" + game); 
+        }
+
+        public static int[][] readGame(File game){
+            int[][] board = new int[9][9] ;
+            for (int i = 0; i < 9; i++) {
+                for (int j = 0; j < 9; j++) {
+                    
+                }
+            }
+            return board;
+        }
+
 }
