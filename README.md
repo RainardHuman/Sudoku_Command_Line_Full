@@ -1,2 +1,7 @@
-# Sudoku_Command_Line_Full
-Full sudoku command line game, has board loading etc 
+
+# Sudoku Command Line
+A full version with board loading and hints.
+
+## Project Details
+ * Still programming working version.
+
