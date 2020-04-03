@@ -91,7 +91,7 @@ public class Sudoku {
             System.out.println("  █████████████████████████");
         }
 
-        public static void loadGame(int gameNum) {
+        public static File loadGame(int gameNum) {
             int matchGame = 0;
             String game = "";
             File folder = new File("Games\\sudokus");
