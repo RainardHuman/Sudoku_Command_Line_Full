@@ -1,12 +1,15 @@
+package human.rainard;
+
 import java.io.*;
 import java.util.*;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
-public class Sudoku{
+public class Sudoku {
     static int[][] localBoard = new int[9][9];
     static int[][] localBoardSolution = new int[9][9];
     static int localBoardNum = 0;
+
     public static void main(String[] args) {
         String[] input = {"","",""};
         
@@ -88,7 +91,7 @@ public class Sudoku{
             System.out.println("  █████████████████████████");
         }
 
-        public static void loadGame(int gameNum) {
+        public static File loadGame(int gameNum) {
             int matchGame = 0;
             String game = "";
             File folder = new File("Games\\sudokus");
@@ -99,7 +102,7 @@ public class Sudoku{
                 //if(gameNum == matchGame)
                 System.out.println(file.getName());
             }
-            return  new File("Games/sudokus/" + game); 
+            return new File("Games/sudokus/" + game);
         }
 
         public static void readGame(File file){
