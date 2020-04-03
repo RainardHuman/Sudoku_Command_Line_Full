@@ -1,0 +1,1 @@
+java -jar ./target/Sudoku_Command_Line_Full-*-jar-with-dependencies.jar 

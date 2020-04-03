@@ -1,3 +1,5 @@
+package human.rainard;
+
 import java.io.*;
 import java.util.*;
 import java.util.regex.Pattern;
@@ -282,11 +284,6 @@ public class Sudoku{
                 "\nThe rules of the game are simple: each of the nine blocks has to contain all the numbers 1-9 within its squares. Each number can only appear once in a row, column or box." + 
                 "\nThe difficulty lies in that each vertical nine-square column, or horizontal nine-square line across, within the larger square, must also contain the numbers 1-9, without repetition or omission." +
                 "\nEvery puzzle has just one correct solution.\n" +
-                "\n\nCommands"+
-                "\n- new "+
-                "\n- help"+
-                "\n- hint"+
-                "\n- exit"+
                 
                 "\n    1 2 3   4 5 6   7 8 9  "+
                 "\n  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"+
