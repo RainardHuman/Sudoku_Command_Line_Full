@@ -6,7 +6,9 @@
 ## Project Details
  * Still programming working version.
 
-## Packing Project
+## Playing Game
+
+  You NEED to change terminal or CMD's chcp to 65001 for correct visual effect!!!!
 
 ### Build
 
