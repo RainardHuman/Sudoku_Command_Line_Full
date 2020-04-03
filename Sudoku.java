@@ -88,16 +88,16 @@ public class Sudoku{
             System.out.println("  █████████████████████████");
         }
 
-        public static File loadGame(int gameNum) {
+        public static void loadGame(int gameNum) {
             int matchGame = 0;
             String game = "";
-            File folder = new File("Games/sudokus");
+            File folder = new File("Games\\sudokus");
             File[] files = folder.listFiles();
             for (File file : files)
             {
-                matchGame++;
-                if(gameNum == matchGame)
-                game = file.getName();
+               // matchGame++;
+                //if(gameNum == matchGame)
+                System.out.println(file.getName());
             }
             return  new File("Games/sudokus/" + game); 
         }
