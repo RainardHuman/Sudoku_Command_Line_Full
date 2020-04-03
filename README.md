@@ -2,7 +2,10 @@
 # Sudoku Command Line
 - A full version with board loading (50Games) and hints.
 - Input patter checker with additional menu options.
-- Validation (Still need *Block* validation
+- Validation (Still need *Block* validation )
+
+![Test Image 1](/playing.png)
+
 ## Project Details
  * Still programming working version.
 
